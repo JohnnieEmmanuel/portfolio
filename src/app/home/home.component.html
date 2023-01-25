@@ -10,10 +10,10 @@
 					<div class="col-md-12 col-sm-8 wow fadeIn m-bottom" >
                         <h1>JOHN EMMANUEL</h1>
 						<h2 class="rotate">FULL STACK DEVELOPER, UI - UX SPECIALIST, PROJECT LEADER</h2>
-						<p>The birth of computers changed the world, my intrigued mind has set itself  on a journey of forever solving problems through the writing of codes.</p>
-						<a  class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.7s"> My Resume</a>
-                        <a  class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.7s">See Works</a>
-						<a  class="btn btn-default smoothScroll wow fadeInUp"  data-wow-delay="0.7s"> Contact Me</a>
+						<p>Unlocking the power of computers revolutionized the world and ignited my passion for problem-solving through the magic of coding</p>
+						<a  class="btn btn-default smoothScroll wow fadeInUp" (click)="viewresume()" data-wow-delay="0.7s"> My Resume</a>
+                        <a  class="btn btn-default smoothScroll wow fadeInUp" (click)="seeworks()" data-wow-delay="0.7s">See Works</a>
+						<a  class="btn btn-default smoothScroll wow fadeInUp"  (click)="contactme()" data-wow-delay="0.7s"> Contact Me</a>
 
 					</div>
 					<div class="col-12">
@@ -140,7 +140,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="wow bounce">PORTFOLIO</h2>
+					<h2 class="wow bounce">WORKS</h2>
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
@@ -212,11 +212,11 @@
 						</address>
 					</div>
 					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.3s">
-						<form role="form" method="post" action="#">
-							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
-							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+						<form >
+							<input [(ngModel)]="name" name="name" type="text"  class="form-control" id="name" placeholder="Your Name">
+							<input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+							<textarea [(ngModel)]="message" name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
+							<input name="send" type="button" (click)="processForm()"  class="form-control" id="send" value="SEND ME">
 						</form>
 					</div>
 					<div class="col-md-1 col-sm-1"></div>
