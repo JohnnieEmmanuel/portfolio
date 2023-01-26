@@ -54,10 +54,14 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio, #contact
+#work,  #portfolio, #contact
     {
-        padding-top: 100px;
-        padding-bottom: 120px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    #about{
+        padding-top: 40px;
+        padding-bottom: 90px;
     }
 /* end all section */
 
@@ -221,16 +225,18 @@ h1,h2,h3,h4,h5
         border-radius: 20px;
     }
     #home .col-12 a{
-        margin-left: 30px;
-        font-size: 4rem;
-        color: #e2001e
+        font-size: 5rem;
+        color: #e2001e;
+        align-items: flex-start;
     }
+
+
 /* end home */
 
 /* start work */
 #work
     {
-        background: #1a1a1a;
+        background: black;
     }
 #work h2
     {
@@ -256,6 +262,7 @@ h1,h2,h3,h4,h5
         vertical-align: middle;
         transition: all 0.4s ease-in;
     }
+    
 #work .media .fa:hover
     {
         background: #ffffff;
@@ -270,6 +277,9 @@ h1,h2,h3,h4,h5
 /* end work */
 
 /* start about */
+#about{
+    background-color: #1a1a1a;
+}
 #about h4
     {
         padding: 15px 0;
@@ -306,7 +316,7 @@ h1,h2,h3,h4,h5
 /* start portfolio */
 #portfolio
     {
-        background: #1a1a1a;
+        background: #191717;
         text-align: center;
     }
 #portfolio h2
@@ -418,19 +428,7 @@ h1,h2,h3,h4,h5
     }
 /* end contact */
 
-/* start footer */
-footer
-    {
-        border-top: 1px solid #090909;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-footer hr
-    {
-        width: 100px;
-    }
-/* end footer */
+
 
 /* start social icon */
 .social-icon 
@@ -464,6 +462,27 @@ footer hr
 }
 
 #send{
-    background: #9d081c!important;
-    font-size: larger;
+    /* border-radius: 30px !important; */
+    
+background:transparent !important;
+   border-bottom-left-radius: 20px!important;
+   border-top-right-radius: 20px!important;;
+   font-family: 'Franklin Gothic Medium';
+   font-size: 19px !important;
+
+   
+}
+#send:hover{
+    background: #f40928!important;
+    font-size: 22px !important;
+
+}
+
+@media (max-width:426px){
+    .talk{
+        width:94%;
+        padding-left:20px;
+        text-align: center;
+    
+    }
 }

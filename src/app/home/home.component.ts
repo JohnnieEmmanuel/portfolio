@@ -54,6 +54,5 @@ export class HomeComponent implements OnInit {
     document.getElementById("portfolio")?.scrollIntoView({behavior:"smooth"});
   }
 
-
 }
 
