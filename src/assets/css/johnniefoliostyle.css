@@ -54,14 +54,18 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work,  #portfolio, #contact
+#work,   #contact
     {
         padding-top: 90px;
         padding-bottom: 90px;
     }
-    #about{
+     #about{
         padding-top: 40px;
         padding-bottom: 90px;
+    }
+    #portfolio{
+        padding-top: 10px;
+        padding-bottom: 70px;
     }
 /* end all section */
 
@@ -321,7 +325,7 @@ h1,h2,h3,h4,h5
     }
 #portfolio h2
     {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 #portfolio .portfolio-thumb
     {

@@ -1,3 +1,68 @@
 i{
     padding-left: 10px !important;
 }
+
+
+.work-card {
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 12px 15px rgba(227, 2, 2, 0.814);
+}
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+.work-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.work-links {
+  display: flex;
+  justify-content: center;
+}
+.work-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: rgba(94, 67, 67, 0.403);
+  transition: all 0.3s ease;
+}
+.work-link:hover {
+  color: #ff0000;
+}
+.work-card:hover .work-link{
+  color: #ff0000;
+
+}
+/* Add responsive styles */
+@media (max-width: 1024px) {
+  .work-card {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .work-card {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .work-card {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.footer {
+    display: flex; 
+    justify-content: center;
+     align-items: center;
+}
