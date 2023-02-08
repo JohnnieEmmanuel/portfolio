@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
     }
 
   viewresume(){
-
+    this.router.navigate(['/resume']);
   }
   contactme(){
     document.getElementById("contact")?.scrollIntoView({behavior:"smooth"});
