@@ -66,3 +66,32 @@ i{
     justify-content: center;
      align-items: center;
 }
+
+
+
+h1  {
+  color: #fff;
+  -webkit-animation: h2 8s infinite; 
+  animation: h1 8s infinite;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes h1 {
+    0%   {text-shadow: 0 0 3px #FF0000; color: #fff;}
+    25%  {text-shadow: 0 0 12px #FF0000;}
+    50%  {text-shadow: 0 0 20px #FF0000; color: pink;}
+    75%  {text-shadow: 0 0 12px #FF0000;}
+    100% {text-shadow: 0 0 3px #FF0000; color: #fff;}
+}
+
+/* Internet Explorer */
+
+@keyframes h1 {
+    0%   {text-shadow: 0 0 3px #FF0000; color: #fff;}
+    25%  {text-shadow: 0 0 12px #FF0000;}
+    50%  {text-shadow: 0 0 20px #FF0000; color: pink;}
+    75%  {text-shadow: 0 0 12px #FF0000;}
+    100% {text-shadow: 0 0 3px #FF0000; color: #fff;}
+}
