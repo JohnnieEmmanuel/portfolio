@@ -1,5 +1,5 @@
 
-  <div id="outerContainer" style="position: relative;">
+  <div id="outerContainer">
   
   <div class="pdf-container">
     <pdf-viewer
@@ -15,10 +15,10 @@
     [external-link-target]="'blank'"
     [autoresize]="true"
     [show-borders]="false"
-    style="width: 100%; height: 600px;"
+    style="width: 100%; height: 700px;"
     ></pdf-viewer>
   </div>
-  <a href="assets/johnnieresume.pdf" download class="download-button" style="position: absolute;">Download</a>
+  <a [href]="src" download class="download-button">Download</a>
 
 </div>
 

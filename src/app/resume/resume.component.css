@@ -1,8 +1,11 @@
 
   
-  
+   #outerContainer{
+    position: relative ;
+   }
+ 
   .download-button {
-    position: fixed;
+   position: absolute;
     top: 20px;
     right: 20px;
     background-color: #e40b00;
@@ -31,4 +34,5 @@
 
     }
   }
+ 
  
